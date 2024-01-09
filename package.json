@@ -1,6 +1,6 @@
 {
-  "name": "json-to-csv",
-  "private": true,
+  "name": "json-to-csv-vue-3-typescript",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
