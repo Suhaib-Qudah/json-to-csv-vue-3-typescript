@@ -28,11 +28,11 @@ yarn add json-to-csv-vue-3-typescript
 
 ```typescript
 import { defineComponent } from 'vue';
-import JsonToCsvConverter from 'json-to-csv-vue-3-typescript';
+import JsonToCSV from 'json-to-csv-vue-3-typescript';
 
 export default defineComponent({
   components: {
-    JsonToCsvConverter,
+      JsonToCSV,
   },
   // Your component code here
 });
@@ -44,25 +44,25 @@ export default defineComponent({
 <template>
   <div>
     <!-- Your existing template content -->
-    <json-to-csv-converter :jsonData="yourJsonData"></json-to-csv-converter>
+    <json-to-csv :data="yourJsonData"></json-to-csv>
   </div>
 </template>
 ```
 
 ### Props
 
-- `jsonData` (required): The JSON data that you want to convert to CSV.
+- `data` (required): The JSON data that you want to convert to CSV.
 
 ### Example
 
 ```typescript
 <template>
   <div>
-    <json-to-csv-converter :jsonData="[
+    <json-to-csv :data="[
       { name: 'John Doe', age: 30, city: 'New York' },
       { name: 'Jane Doe', age: 25, city: 'Los Angeles' },
       { name: 'Bob Smith', age: 40, city: 'Chicago' }
-    ]"></json-to-csv-converter>
+    ]"></json-to-csv>
   </div>
 </template>
 ```
